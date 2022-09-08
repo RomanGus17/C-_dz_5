@@ -80,43 +80,43 @@
 //Например:
 //[3 7 22 2 78] -> 76
 
-// void FillArray(int[] num) //функция, которая создает рандомный массив
-// {
-//     for(int i = 0; i < num.Length; i++)
-//     {
-//         num[i] = new Random().Next(1,100);
-//     }
-// }
+void FillArray(int[] num) //функция, которая создает рандомный массив
+{
+    for(int i = 0; i < num.Length; i++)
+    {
+        num[i] = new Random().Next(1,100);
+    }
+}
 
-// void PrintArray(int[] num) //функция, которая показывает рандомный массив
-// {
-//     for(int i = 0; i < num.Length; i++)
-//     {
-//         Console.Write(num[i] + " ");
-//     }
-//     Console.WriteLine("");
-// }
+void PrintArray(int[] num) //функция, которая показывает рандомный массив
+{
+    for(int i = 0; i < num.Length; i++)
+    {
+        Console.Write(num[i] + " ");
+    }
+    Console.WriteLine("");
+}
 
-// void Difference(int[] num) //функция, которая вычисляет разницу максимального и минимального значений
-// {
-//     double min = Int32.MaxValue;
-//     double max = Int32.MinValue;
+void Difference(int[] num) //функция, которая вычисляет разницу максимального и минимального значений
+{
+    double min = Int32.MaxValue;
+    double max = Int32.MinValue;
 
-//     for (int a = 0; a < num.Length; a++)
-//     {
-//         if (num[a] > max)
-//             {
-//                 max = num[a];
-//             }
-//         if (num[a] < min)
-//             {
-//                 min = num[a];
-//             }
-//     }
-//     Console.WriteLine($"MAX = {max}, MIN = {min}. Разница = {max - min}");
-// }
+    for (int a = 0; a < num.Length; a++)
+    {
+        if (num[a] > max)
+            {
+                max = num[a];
+            }
+        if (num[a] < min)
+            {
+                min = num[a];
+            }
+    }
+    Console.WriteLine($"MAX = {max}, MIN = {min}. Разница = {max - min}");
+}
 
-// int[] num = new int[4];
-// FillArray(num);
-// PrintArray(num);
-// Difference(num);
+int[] num = new int[5];
+FillArray(num);
+PrintArray(num);
+Difference(num);
